@@ -9,11 +9,18 @@
             color: white;
             font-family: "Tahoma";
         }
+        .abc {
+          background-color: #aff3f3;
+          color: blue;
+        }
+        form {
+          background-color: #f6f5ef;
+        }
     </style>
 </head>
 <body>
 <form action="/index.html">
-  <b class="tag">Sở Thích của bạn</b> <br>
+    <b class="tag">Sở Thích của bạn</b> <br>
     <label for="">Họ và tên</label>
     <input type="text" name="yourname" placeholder="Yourname"> <br>
     <label for="">Email</label>
@@ -33,8 +40,38 @@
     <input type="checkbox" name="đọc sách" value="đọc sách"> <br>
     <label>Du lịch</label>
     <input type="checkbox" name="du lịch" value="du lịch"> <br>
-    <input type="submit" name="Gửi thông tin">
-    <input type="reset" name="Nhập lại">
+    <input type="submit" name="Gửi thông tin" value="Gửi thông tin">
+    <input type="reset" name="Nhập lại" value="Nhập lại">
+</form>
+
+<form action="/index.html">
+<b class="abc">ĐĂNG KÝ HỌC VIÊN</b> <br>
+ <label>Họ và tên</label>
+   <td> <input type="text" name="yourname"></td>
+  <br>
+  <label>Ngày sinh</label>
+  <input type="text" name="ngày sinh"> <br>
+  <label>Giới tính <span>:</span></label>
+  <label for="">Nam</label>
+  <input type="radio" name="giới tính" value="nam">
+  <label for="">Nữ</label>
+  <input type="radio" name="giới tính" value="nữ"> <br>
+  <label for="">Địa Chỉ</label>
+  <textarea name="địa chỉ" id="địa chỉ" cols="30" rows="-5"></textarea> <br>
+  <label for="">Lớp</label>
+  <select>
+    <option value="Found">Found</option>
+    <option value="Ietls">Ietls</option>
+    <option value="Toeic">toeic</option>
+  </select> <br>
+   <b>Email</b>
+  <input type="text" name="email"> <br>
+  <b>Điện thoại</b>
+  <input type="text" name="điện thoạt"> <br>
+  <input type="submit" name="Đăng ký">
+  <input type="reset" name="reset">
+</form>
+
 </form>
 </body>
 </html>
